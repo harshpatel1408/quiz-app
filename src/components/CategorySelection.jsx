@@ -101,8 +101,6 @@ function CategorySelection({ categories, onSelect, userName, setUserName }) {
       >
         Start Quiz
       </Button>
-
-      {/* Quiz Rules Modal */}
       <Modal open={openModal} onClose={() => setOpenModal(false)}>
         <Box sx={modalStyle}>
           <Typography variant="h6" gutterBottom sx={{ fontSize: { xs: '1.25rem', sm: '1.5rem' } }}>

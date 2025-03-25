@@ -16,7 +16,6 @@ function Result({ score, total, answers, userName, onRestart }) {
 
   return (
     <Box sx={{ maxWidth: { xs: '100%', sm: '600px' }, mx: 'auto', textAlign: 'center', px: { xs: 2, sm: 0 }, py: 4 }}>
-      {/* Header */}
       <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 4, alignItems: 'center' }}>
         <Typography variant="h6" color="primary" align="left">
           <span style={{fontWeight: '250'}}>QUIZ</span><span style={{ color: '#B92B5D' }}>Mania</span>
@@ -31,14 +30,12 @@ function Result({ score, total, answers, userName, onRestart }) {
         </Box>
       </Box>
 
-      {/* Icon */}
       {isHighScore ? (
         <CheckCircleOutlineIcon sx={{ fontSize: { xs: 50, sm: 60 }, color: 'green' }} />
       ) : (
         <SentimentDissatisfiedIcon sx={{ fontSize: { xs: 50, sm: 60 }, color: '#D81B60' }} />
       )}
 
-      {/* Subtext */}
       <Typography
         variant="body1"
         color="secondary"
@@ -49,7 +46,6 @@ function Result({ score, total, answers, userName, onRestart }) {
           : 'You successfully completed the Quiz but you need to'}
       </Typography>
 
-      {/* Main Heading */}
       <Typography
         variant="h4"
         gutterBottom
@@ -58,7 +54,6 @@ function Result({ score, total, answers, userName, onRestart }) {
         {isHighScore ? 'CONGRATULATION' : 'KEEP PRACTICING!'}
       </Typography>
 
-      {/* Score Section */}
       <Box sx={{ mt: 4 }}>
         <Typography
           variant="body2"
@@ -111,8 +106,6 @@ function Result({ score, total, answers, userName, onRestart }) {
           {performanceText}
         </Typography>
       </Box>
-
-      {/* Summary Section */}
       <Box
         sx={{
           mt: 2,
@@ -138,7 +131,6 @@ function Result({ score, total, answers, userName, onRestart }) {
         </Typography>
       </Box>
 
-      {/* Retake Quiz Button */}
       <Button
         variant="outlined"
         color="primary"

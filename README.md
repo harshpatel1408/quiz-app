@@ -25,7 +25,7 @@ The **Quiz App** is a web-based application built with React and Material-UI, of
 ### Clone the Repository
 Clone the project to your local machine:
 ```bash
-> git clone https://github.com/<your-username>/quiz-app.git
+> git clone https://github.com/harshpatel1408/quiz-app.git
 > cd quiz-app
 > npm install
 > npm start
